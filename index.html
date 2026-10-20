@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websocket Live Test Rig</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        padding: 20px;
+        background-color: #121212;
+        color: #ffffff;
+      }
+      #log {
+      background-color: #000;
+        padding: 10px;
+        border-radius: 5px;
+        height: 300px;
+        overflow-y: auto;
+        border: 1px solid #333;
+      }
+      .status-on {
+        color: #00ff00;
+      }
+      .status-off {
+        color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Websocket Broadcast Console</h1>
+    <p id="status" class="status-off">Connecting...</p>
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="Type a message..." />
+      <button type="submit">Send</button>
+    </form>
+
+    <h3>Live stream logs</h3>
+    <div id="log"></div>
+  </body>
+</html>
